@@ -3,21 +3,27 @@
  */
 package ru.otus;
 
-
-import com.google.common.collect.Lists;
-
 import java.util.Collections;
 
-
+/**
+ *
+ * To start the application:
+ * ./gradlew build
+ * java -jar ./L01-gradle/build/libs/gradleHelloWorld-0.1.jar
+ *
+ * To unzip the jar:
+ * unzip -l L01-gradle.jar
+ * unzip -l gradleHelloWorld-0.1.jar
+ *
+ */
 public class App {
     public static void main(String... args) {
         System.out.println("TEST - addAll");
-        DIYArrayList<String> first_list =new DIYArrayList<>(String[].class);
+        DIYArrayList<String> first_list =new DIYArrayList<>();
         for (int i=0;i<20;i++){
             first_list.add("first list number "+String.valueOf(i));
         }
-
-        DIYArrayList<String> second_list =new DIYArrayList<>(String[].class);
+        DIYArrayList<String> second_list =new DIYArrayList<>();
         for (int i=0;i<20;i++){
             second_list.add("second list number "+String.valueOf(i));
         }
@@ -25,14 +31,13 @@ public class App {
         for (String item:first_list){
             System.out.println(item);
         }
-
         // test copy
         System.out.println("TEST - copy");
-        DIYArrayList<String> first_list2 =new DIYArrayList<>(String[].class);
+        DIYArrayList<String> first_list2 =new DIYArrayList<>();
         for (int i=0;i<20;i++){
             first_list2.add("first list number "+String.valueOf(i));
         }
-        DIYArrayList<String> second_list2 =new DIYArrayList<>(String[].class);
+        DIYArrayList<String> second_list2 =new DIYArrayList<>();
         for (int i=0;i<10;i++){
             second_list2.add("second list number "+String.valueOf(i));
         }
@@ -44,7 +49,7 @@ public class App {
 
         /// test sort
         System.out.println("TEST - sort");
-        DIYArrayList<Integer> src =new DIYArrayList<>(Integer[].class);
+        DIYArrayList<Integer> src =new DIYArrayList<>();
         for (int i=0;i<20;i++){
             src.add((int)(Math.random() * ( 100 )));
         }
@@ -59,4 +64,5 @@ public class App {
             System.out.println(item.toString());
         }
     }
+    
 }
