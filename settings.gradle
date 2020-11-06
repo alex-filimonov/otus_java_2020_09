@@ -7,6 +7,7 @@
  * in the user manual at https://docs.gradle.org/6.6.1/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'otusJava'
+rootProject.name = 'ru.otus'
 include 'L01-gradle'
 include 'L03-DIYArrayList'
+include 'L06-reflection'
