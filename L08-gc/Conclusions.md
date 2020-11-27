@@ -1,19 +1,21 @@
 # G1 vs Serial GC
 
 первое приложение запускалось с параметрами
+```
 java -Xms1024m^
  -Xmx1024m^
  -XX:+UseG1GC^
  -Xlog:gc=debug:file=C:\temp\gc-%p-%t.log:tags,uptime,time,level:filecount=5,filesize=10m^
  -XX:MaxGCPauseMillis=100^
-
-второе 
+```
+второе
+``` 
 java -Xms1024m^
  -Xmx1024m^
  -XX:+UseSerialGC^
  -Xlog:gc=debug:file=C:\temp\gc-%p-%t.log:tags,uptime,time,level:filecount=5,filesize=10m^
  -XX:MaxGCPauseMillis=100^
-
+```
 
 ## Картинки
 в результате visual vm
