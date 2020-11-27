@@ -1,4 +1,4 @@
-# GC1 vs Serial GC
+# G1 vs Serial GC
 
 первое приложение запускалось с параметрами
 java -Xms1024m^
@@ -18,10 +18,10 @@ java -Xms1024m^
 ## Картинки
 в результате visual vm
 для G1
-[!image gc1](file://C:\work\java\otus_java_2020_09\L08-gc\gc-gc1.png)
+[!image gc1](./gc-gc1.png)
 
 для Serial
-[!image serial](file://C:\work\java\otus_java_2020_09\L08-gc\gc-serial.png)
+[!image serial](./gc-serial.png)
 
 ## Статистика работы GC
 
