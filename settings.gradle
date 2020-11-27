@@ -11,3 +11,5 @@ rootProject.name = 'ru.otus'
 include 'L01-gradle'
 include 'L03-DIYArrayList'
 include 'L06-reflection'
+include 'L08-gc'
+
